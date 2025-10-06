@@ -1,5 +1,5 @@
 import os
-os.system ('cls')
+os.system('cls')
 
 # Clases
 class Alumnos: 
@@ -10,7 +10,7 @@ class Alumnos:
         self._matricula=matricula
     
     # Metodos de la clase Alumnos
-    def inscribirse(self):
+    def inscribirse():
         pass
 
     def estudiar(self):
@@ -37,9 +37,6 @@ class Alumnos:
     def matricula(self,matricula):
         self._matricula=matricula
 
-alumno1=Alumnos("Alex",19,"1234")
-alumno2=Alumnos("Cris",20,"5678")
-
 class Profesores:
     # Constructor Profesores
     def __init__(self,nombre,experiencia,num_profesor):
@@ -48,10 +45,10 @@ class Profesores:
         self._num_profesor=num_profesor
 
     # Metodos de la clase Profesores
-    def impartir():
+    def impartir(self):
         pass
 
-    def evaluar():
+    def evaluar(self):
         pass
     
     @property
@@ -75,10 +72,7 @@ class Profesores:
     def num(self,num):
         self._num_profesor=num
 
-profe1=Profesores("Dagoberto",14,12345678)
-profe2=Profesores("Juan Pablo",3,87654321)
-
-class Cursos():
+class Cursos:
     # Constructor Cursos
     def __init__(self,nombre,codigo,creditos):
         self.__nombre=nombre
@@ -86,7 +80,7 @@ class Cursos():
         self.__creditos=creditos
 
     # Metodos de la clase Cursos
-    def asignar():
+    def asignar(self):
         pass
 
     @property
@@ -110,18 +104,21 @@ class Cursos():
     def creditos(self,creditos):
         self.__creditos=creditos
 
-curso1=Cursos("POO","67wxdd",10)
-curso2=Cursos("Sistemas Operativos","693pv",10)
-
 # Objetos
+alumno1=Alumnos("Alex",19,"1234")
+alumno2=Alumnos("Cris",20,"5678")
 print("\n\n\t\t.::ALUMNOS::.")
 print(f".::Alumno 1::. \nNombre: {alumno1.nombre} \nEdad: {alumno1.edad} \nMatricula: {alumno1.matricula}")
 print(f"\n.::Alumno 2::. \nNombre: {alumno2.nombre} \nEdad: {alumno2.edad} \nMatricula: {alumno2.matricula}")
 
+profe1=Profesores("Dagoberto",14,12345678)
+profe2=Profesores("Juan Pablo",3,87654321)
 print("\n\n\t\t.::PROFESORES::.")
 print(f".::Profesor 1::. \nNombre: {profe1.nombre} \nExperiencia: {profe1.experiencia} \nNumero de Profesor: {profe1.num}")
 print(f"\n.::Profesor 2::. \nNombre: {profe2.nombre} \nExperiencia: {profe2.experiencia} \nNumero de Profesor: {profe2.num}")
 
+curso1=Cursos("POO","67wxdd",10)
+curso2=Cursos("Sistemas Operativos","693pv",10)
 print("\n\n\t\t.::CURSOS::.")
 print(f".::Curso 1::. \nNombre: {curso1.nombre} \nCodigo: {curso1.codigo} \nCreditos: {curso1.creditos}")
 print(f"\n.::Curso 2::. \nNombre: {curso2.nombre} \nCodigo: {curso2.codigo} \nCreditos: {curso2.creditos}")
